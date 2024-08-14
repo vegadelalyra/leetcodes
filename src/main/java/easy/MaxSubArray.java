@@ -6,7 +6,7 @@ public class MaxSubArray {
         int maxGlobal = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
-            maxCurrent = Math.max(nums[i], maxCurrent + nums[1]);
+            maxCurrent = Math.max(nums[i], maxCurrent + nums[i]);
             if (maxCurrent > maxGlobal) {
                 maxGlobal = maxCurrent;
             }

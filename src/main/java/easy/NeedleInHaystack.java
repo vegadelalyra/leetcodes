@@ -1,6 +1,6 @@
 package easy;
 
-public class needleInHaystack {
+public class NeedleInHaystack {
     public int strStr(String haystack, String needle) {
         if (needle.isEmpty()) return 0;
         int hLen = haystack.length();
